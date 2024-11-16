@@ -4,7 +4,7 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 const generateBtn = document.getElementById("generate-btn")
 let firstPassword = document.getElementById("first-password")
 let secondPassword = document.getElementById("second-password")
-let passwordLength = 15
+let passLength = document.getElementById("password-length")
 
 function getRandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length)
@@ -13,6 +13,7 @@ function getRandomCharacter() {
 
 function generatePasswords() {
     let randomPassword = ""
+    let passwordLength = passLength.value
     for (let i = 0; i < passwordLength; i++) {
         randomPassword += getRandomCharacter()
     }

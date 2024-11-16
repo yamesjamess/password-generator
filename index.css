@@ -22,6 +22,11 @@ h1 {
     margin-bottom: 0px;
 }
 
+#generate-container {
+    display: flex;
+    align-items: center;
+}
+
 #generate-btn {
     background-color: #10B981;
     color: white;
@@ -31,6 +36,16 @@ h1 {
     border-radius: 5px;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#password-length {
+    width: 100px;
+    margin-top: 0;
 }
 
 h2 {

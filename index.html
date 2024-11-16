@@ -12,7 +12,12 @@
     <div class="container">
         <h1>Generate a <br><span>random password</span></h1>
         <h2>Never use an insecure password again.</h2>
-        <button id="generate-btn">Generate passwords</button>
+        <div id="generate-container">
+            <button id="generate-btn">Generate passwords</button>
+            <p>Password length:</p>
+            <input type="number" name="password-length" id="password-length" min="15" max="21" value="15">
+        </div>
+
         <div class="inputs">
             <hr>
             <input type="text" id="first-password">
